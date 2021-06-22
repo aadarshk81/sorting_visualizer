@@ -1,0 +1,22 @@
+.array-container {
+    left: 100px;
+    
+    /* top: 100px; */
+  }
+  
+  .array-bar {
+    width: 10px;
+    display: inline-block;
+    margin: 0 1px;
+    box-shadow: 2px 2px 5px pink;
+  }
+
+ #speed {
+    margin-left: 50px;
+ }
+
+ .btns {
+     display: inline-flex;
+     justify-content:space-evenly;
+     column-gap: 50px;
+    }
