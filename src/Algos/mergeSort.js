@@ -72,7 +72,6 @@ async function mergeSort(arr, start, end, max_num){
 }
 
 async function mergeSortStart(arr,n){
-    console.log("called");
     var max_num = 0;
     for(var i=0; i<n; i++){
         if(parseInt(arr[i].style.height)>max_num){
