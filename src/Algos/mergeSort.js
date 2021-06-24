@@ -14,7 +14,7 @@ async function merge(arr,start,mid,end,max_num){
         arr[j].style.backgroundColor = "yellow";
         await funcs.waitforme(fast);
         if(parseInt(arr[i].style.height)%max_num<=parseInt(arr[j].style.height)%max_num){
-            arr[j].style.backgroundColor = "blue";
+            arr[j].style.backgroundColor = "cyan";
             arr[k].style.backgroundColor = "red";
             await funcs.waitforme(fast);
             let num = (parseInt(arr[k].style.height)+(parseInt(arr[i].style.height)%max_num)*max_num);
@@ -24,20 +24,20 @@ async function merge(arr,start,mid,end,max_num){
 
             //console.log(num);
             //console.log(arr[k]);
-            arr[i].style.backgroundColor = "blue";
-            arr[k].style.backgroundColor = "blue";
+            arr[i].style.backgroundColor = "cyan";
+            arr[k].style.backgroundColor = "cyan";
             k++;
             i++; 
         } else {
-            arr[i].style.backgroundColor = "blue";
+            arr[i].style.backgroundColor = "cyan";
             arr[k].style.backgroundColor = "red";
             await funcs.waitforme(fast);
             let num = (parseInt(arr[k].style.height)+(parseInt(arr[j].style.height)%max_num)*max_num);
             console.log(num);
 
             aux[k]=num;
-            arr[j].style.backgroundColor = "blue";
-            arr[k].style.backgroundColor = "blue";
+            arr[j].style.backgroundColor = "cyan";
+            arr[k].style.backgroundColor = "cyan";
             k++;
             j++;
         }
@@ -49,8 +49,8 @@ async function merge(arr,start,mid,end,max_num){
         await funcs.waitforme(fast);
         let num = (parseInt(arr[k].style.height)+(parseInt(arr[i].style.height)%max_num)*max_num);
         aux[k]=num;
-        arr[i].style.backgroundColor = "blue";
-        arr[k].style.backgroundColor = "blue";
+        arr[i].style.backgroundColor = "cyan";
+        arr[k].style.backgroundColor = "cyan";
         k++;
         i++; 
     }
@@ -61,8 +61,8 @@ async function merge(arr,start,mid,end,max_num){
         let num = (parseInt(arr[k].style.height)+(parseInt(arr[j].style.height)%max_num)*max_num);
         console.log(num);
         aux[k]=num;
-        arr[j].style.backgroundColor = "blue";
-        arr[k].style.backgroundColor = "blue";
+        arr[j].style.backgroundColor = "cyan";
+        arr[k].style.backgroundColor = "cyan";
         k++;
         j++;
     }
@@ -70,7 +70,7 @@ async function merge(arr,start,mid,end,max_num){
     for(i=start; i<=end; i++){
         let num = Math.floor(aux[i]/max_num);
         arr[i].style.height = `${num}px`;
-        arr[i].style.backgroundColor = "green";
+        arr[i].style.backgroundColor = "blue";
         console.log("i = "+i+" "+arr[i].style.height);
     }
     
