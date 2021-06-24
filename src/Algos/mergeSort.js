@@ -95,7 +95,7 @@ async function mergeSortStart(arr,n){
     max_num = max_num+1;
     console.log("Max num = "+max_num);
     
-    mergeSort(arr,0,n-1,max_num);
+    await mergeSort(arr,0,n-1,max_num);
 }
 export default async function mS(speed){
     fast = speed;
@@ -106,7 +106,7 @@ export default async function mS(speed){
     for(let i=0; i<n; i++)
     {console.log(arr[i].style.height);}
     //console.log(n);
-    mergeSortStart(arr,n);
+    await mergeSortStart(arr,n);
     for(let i=0; i<n; i++)
     {console.log(arr[i].style.height);}
     funcs.enable();
