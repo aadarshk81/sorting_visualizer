@@ -104,7 +104,7 @@ export default async function mS(speed){
     var arr = document.querySelectorAll(".array-bar");
     let n = arr.length;
     for(let i=0; i<n; i++)
-    {console.log(arr[i].style.height);}
+    {console.log(arr[i]);}
     //console.log(n);
     await mergeSortStart(arr,n);
     for(let i=0; i<n; i++)

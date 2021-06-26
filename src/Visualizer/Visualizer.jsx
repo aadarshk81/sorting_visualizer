@@ -5,6 +5,7 @@ import qS from "../Algos/quickSort"
 import iS from "../Algos/insertionSort"
 import mS from "../Algos/mergeSort"
 import sS from "../Algos/selectionSort"
+import hS from "../Algos/heapSort"
 
 export default class Visualizer extends React.Component
 {
@@ -58,6 +59,10 @@ export default class Visualizer extends React.Component
         qS(500-document.getElementById("speed_input").value);
       }
 
+      heapSort() {
+        hS(500-document.getElementById("speed_input").value);
+      }
+
 
       //main rendering function
       render() {
@@ -86,7 +91,7 @@ export default class Visualizer extends React.Component
                     <div
                     className="array-bar"
                     key={idx}
-                    style={{backgroundColor: `blue`,height: `${value}px`,}}></div>
+                    style={{backgroundColor: `blue`,height: `${value}px`}}></div>
                     ))}
                 </div>
 
@@ -98,6 +103,7 @@ export default class Visualizer extends React.Component
                     <input type="button" value="Quick Sort" onClick={() => this.quickSort()}/>
                     <input type="button" value="Selection Sort" onClick={() => this.selectionSort()}/>
                     <input type="button" value="Insertion Sort" onClick={() => this.insertionSort()}/>
+                    <input type="button" value="Heap Sort" onClick={() => this.heapSort()}/>
                 </div>
             </div>
         )
