@@ -1,6 +1,6 @@
 import funcs from "./main"
 
-let fast = 10;
+let fast = 0;
 
 async function selectionSort(arr, n){
     for(let step = 0; step<n-1; step++){

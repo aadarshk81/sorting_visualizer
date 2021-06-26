@@ -1,6 +1,6 @@
 import funcs from "./main"
 
-let fast = 10;
+let fast = 0;
 async function merge(arr,start,mid,end,max_num){
     console.log("start = "+start+"mid = "+mid+"end = "+end+"max = "+max_num);
     let i = start;
