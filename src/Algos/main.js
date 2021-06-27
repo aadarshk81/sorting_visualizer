@@ -34,6 +34,13 @@ const funcs = {
     
 
      document.getElementById("speed_input").disabled=false;
+
+     const arr = document.querySelectorAll(".array-bar");
+
+     for(var i=0;i<arr.length;i++)
+     {
+         arr[i].style.backgroundColor = 'blue';
+     }
     
 }
 }

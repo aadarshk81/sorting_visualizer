@@ -25,9 +25,9 @@ export default async function bS(speed)
             arr[j].style.backgroundColor = 'cyan';
             arr[j+1].style.backgroundColor = 'cyan';
         }
-        arr[arr.length-1-i].style.backgroundColor = 'blue';
+        arr[arr.length-1-i].style.backgroundColor = 'green';
     }
-    arr[0].style.backgroundColor = 'blue';
+    arr[0].style.backgroundColor = 'green';
 
     funcs.enable();
 }
