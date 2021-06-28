@@ -15,7 +15,7 @@ async function heap(arr, n){
         arr[i].style.backgroundColor = "green";
         await heapify(arr,i,0);
     }
-    arr[0].style.backgroundColor = "blue";
+    arr[0].style.backgroundColor = "green";
 }
 
 async function heapify(arr, n, i){
