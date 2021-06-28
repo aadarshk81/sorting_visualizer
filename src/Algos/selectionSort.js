@@ -24,9 +24,12 @@ async function selectionSort(arr, n){
         }
         console.log(min_idx+" "+step);
         await funcs.waitforme(fast);
-        arr[step].style.backgroundColor = "blue";
+        arr[step].style.backgroundColor = "green";
         arr[min_idx].style.backgroundColor = "blue";
         funcs.swap(arr[step],arr[min_idx]);
+
+        for(var k = 0;k<step;k++)
+        arr[k].style.backgroundColor='green';
     }
 }
 export default async function sS(speed){

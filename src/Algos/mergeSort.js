@@ -70,7 +70,7 @@ async function merge(arr,start,mid,end,max_num){
     for(i=start; i<=end; i++){
         let num = Math.floor(aux[i]/max_num);
         arr[i].style.height = `${num}px`;
-        arr[i].style.backgroundColor = "blue";
+        arr[i].style.backgroundColor = "green";
         console.log("i = "+i+" "+arr[i].style.height);
     }
     

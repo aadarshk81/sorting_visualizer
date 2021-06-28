@@ -12,10 +12,10 @@ async function heap(arr, n){
         await funcs.waitforme(fast);
         funcs.swap(arr[i],arr[0]);
         await funcs.waitforme(fast);
-        arr[i].style.backgroundColor = "blue";
+        arr[i].style.backgroundColor = "green";
         await heapify(arr,i,0);
     }
-    arr[0].style.backgroundColor = "blue";
+    arr[0].style.backgroundColor = "green";
 }
 
 async function heapify(arr, n, i){
