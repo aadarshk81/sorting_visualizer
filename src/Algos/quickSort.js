@@ -33,7 +33,7 @@ async function partition(arr,l,r)
         {
             funcs.swap(arr[j],arr[i]);  //swap current element to index next to element smaller that it.
             arr[i].style.backgroundColor = 'yellow';    //smaller than pivot
-            if(i != j) arr[j].style.backgroundColor = 'pink';   //greater element than pivot
+            if(i !== j) arr[j].style.backgroundColor = 'pink';   //greater element than pivot
 
             i++;
 
@@ -55,7 +55,7 @@ async function partition(arr,l,r)
     await funcs.waitforme(fast);
 
     for(let k = 0; k < arr.length; k++){
-        if(arr[k].style.backgroundColor != 'green' && arr[k].style.backgroundColor !='purple')
+        if(arr[k].style.backgroundColor !== 'green' && arr[k].style.backgroundColor !=='purple')
             arr[k].style.backgroundColor = 'cyan';
     }
     return i-1;
