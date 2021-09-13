@@ -16,24 +16,26 @@ const funcs = {
 },
 
  disable() {
-    document.getElementById("new-array").disabled=true;
+    document.getElementsByClassName("b")[0].disabled=true;
     
-
-    document.getElementById("arr_sz").disabled=true;
-    
-
-    document.getElementById("speed_input").disabled=true;
-    
+    document.getElementsByClassName("slide")[0].disabled=true;
+    document.getElementsByClassName("slide")[1].disabled=true;
+    var cells = document.getElementsByClassName("a"); 
+for (var i = 0; i < cells.length; i++) { 
+    cells[i].disabled = true;
+}
 },
 
  enable() {
-     document.getElementById("new-array").disabled=false;
-    
+     
+     document.getElementsByClassName("b")[0].disabled=false;
+     document.getElementsByClassName("slide")[0].disabled=false;
+     document.getElementsByClassName("slide")[1].disabled=false;
 
-     document.getElementById("arr_sz").disabled=false;
-    
-
-     document.getElementById("speed_input").disabled=false;
+     var cells = document.getElementsByClassName("a"); 
+for (var i = 0; i < cells.length; i++) { 
+    cells[i].disabled = false;
+}
 
      const arr = document.querySelectorAll(".array-bar");
 

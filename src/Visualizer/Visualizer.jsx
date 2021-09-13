@@ -68,21 +68,21 @@ export default class Visualizer extends React.Component
       render() {
           const {array} = this.state;
         return(
-            <div>
-                <div>
+            <div className="d">
+                <div className="d">
                     <h1> Sorting Visualizer </h1>
                 </div>
                 <div className="col">
-                <span >Size
-                    5<input id="arr_sz" type="range" min="5" max="100" step={1} onChange={() => this.resetArray()}/>100
+                <span style={{color: 'white'}}>Size  
+                    5<input className="slide" id="arr_sz" type="range" min="5" max="100" step={1} onChange={() => this.resetArray()}/>100
                 </span>
-                <span id="speed">Speed
-                    <input id="speed_input" type="range" min="20" max="490" step={10}/>
+                <span id="speed" style={{color: 'white'}}>Speed  
+                    <input className="slide" id="speed_input" type="range" min="20" max="490" step={10}/>
                 </span>
                 <br></br>
                 <br></br>
                 <span>
-                    <input id="new-array" type="button" value="Generate New Array" onClick={()=> this.resetArray()} />
+                    <input id="new-array" type="button" className="b" value="Generate New Array" onClick={()=> this.resetArray()} />
                 </span>
                 </div>
                 <br/>
@@ -98,12 +98,12 @@ export default class Visualizer extends React.Component
                 <br></br>
 
                 <div className="btns">
-                    <input type="button" value="Bubble Sort" onClick={() => this.bubbleSort()}/>
-                    <input type="button" value="Merge Sort" onClick={() => this.mergeSort()}/>
-                    <input type="button" value="Quick Sort" onClick={() => this.quickSort()}/>
-                    <input type="button" value="Selection Sort" onClick={() => this.selectionSort()}/>
-                    <input type="button" value="Insertion Sort" onClick={() => this.insertionSort()}/>
-                    <input type="button" value="Heap Sort" onClick={() => this.heapSort()}/>
+                    <input type="button" className="a" value="Bubble Sort" onClick={() => this.bubbleSort()}/>
+                    <input type="button" className="a" value="Merge Sort" onClick={() => this.mergeSort()}/>
+                    <input type="button" className="a" value="Quick Sort" onClick={() => this.quickSort()}/>
+                    <input type="button" className="a" value="Selection Sort" onClick={() => this.selectionSort()}/>
+                    <input type="button" className="a" value="Insertion Sort" onClick={() => this.insertionSort()}/>
+                    <input type="button" className="a" value="Heap Sort" onClick={() => this.heapSort()}/>
                 </div>
             </div>
         )
